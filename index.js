@@ -55,8 +55,6 @@ const promptUser = () => {
     },
   ]);
 
-  then((response)) => {
-      const {title, email, github, license, installation, usage, contribution, test}
       var descriptionoflicense;
       var licensebadge;
       var descriptionofcontribution; 
@@ -131,8 +129,7 @@ SOFTWARE."
         ${tests}
 
         ## Questions
-        Github: ${github} | Email: ${email}`
-  ;
+        Github: ${github} | Email: ${email};
     }
 
 // Bonus using writeFileAsync as a promise
