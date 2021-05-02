@@ -22,6 +22,11 @@ const promptUser = () => {
       message: 'Enter your GitHub Username',
     },
     {
+        type: 'input',
+        name: 'githublink',
+        message: 'Enter your GitHub profile link',
+      },
+    {
       type: 'input',
       name: 'license',
       message: 'What is the license you are using for the repository?',
@@ -53,11 +58,13 @@ const promptUser = () => {
   then((response)) => {
       const {title, email, github, license, installation, usage, contribution, test}
       var descriptionoflicense;
+      var licensebadge;
       var descriptionofcontribution; 
       switch (license) {
           case "MIT License":
-              descriptionoflicense = 
-              "MIT license
+            licensebadge = "![license](https://img.shields.io/badge/license-MIT-green.svg)"
+            descriptionoflicense = 
+            "MIT license
 Copyright (c)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -78,10 +85,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE."
             break;
         case "Apache License 2.0":
+            licensebadge = "![license](https://img.shields.io/badge/license-Apache-blue.svg)"
             descriptionoflicense = 
-            "Copyright [yyyy] [name of copyright owner]
-
-            Licensed under the Apache License, Version 2.0 (the "License");
+            "Licensed under the Apache License, Version 2.0 (the "License");
             you may not use this file except in compliance with the License.
             You may obtain a copy of the License at
             
@@ -96,40 +102,44 @@ SOFTWARE."
         }
         const generateREADME = (answers) =>
         # ${title}
-        ${chosenLicense}
+        ${license}
         ## Description
-        ${desc1}  
-        ${desc2}  
-        ${desc3}  
-        ${desc4}  
+        ${usage}  
+
         ## Table of Contents
-        [Installation](#Installation)  
-        [Usage](#Usage)  
-        [Contribution](#Contribution)  
-        [Questions](#Questions)  
+        [Installation](#installation)  
+        [Usage](#usage)  
+        [License] (#license)
+        [Contribution](#contribution)  
+        [Tests] (#test)
+        [Questions] (#questions)
+        
         ## Installation
-        Step One: ${install.instStep1}  
-        Step Two: ${install.instStep2}  
-        Step Three: ${install.instStep3}  
+        ${installation}  
+
         ## Usage
-        ${use.use1}  
-        ${use.use2}  
+        ${usage}  
+
         ## Contribution
-        ${contributionDesc}
+
+        ${contribution}
+
         ## License
-        ${licenseDesc}
+        ${descriptionoflicense}
+
         ## Running Tests
         ${tests}
+
         ## Questions
-        If you wish to inquire about my application, below is my contact information 👇  
-        ${github} | Email | ${email}`
+        Github: ${github} | Email: ${email}`
   ;
+    }
 
 // Bonus using writeFileAsync as a promise
 const init = () => {
   promptUser()
-    .then((answers) => writeFileAsync('index.html', generateHTML(answers)))
-    .then(() => console.log('Successfully wrote to index.html'))
+    .then((answers) => writeFileAsync('readme.md', generatereadme(answers)))
+    .then(() => console.log('Successfully wrote to readme.md'))
     .catch((err) => console.error(err));
 };
 
