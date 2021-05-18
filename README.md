@@ -1,11 +1,11 @@
 
-        # t
-          ![license](https://img.shields.io/badge/license-Apache License-blue.svg)
+        # sadf
+          ![license](https://img.shields.io/badge/license-MIT License-blue.svg)
           
-        Apache License
+        MIT License
         
         ## Description
-        t  
+        sdaf  
 
         ## Table of Contents
         [Installation](#installation)  
@@ -22,12 +22,12 @@
         undefined  
 
         ## Usage
-        t
+        sdaf
         undefined  
 
         ## Contribution
 
-        Citizen Code Of Conduct
+        Contributor Covenant
 
         ## License
         undefined
@@ -36,4 +36,4 @@
         undefined
 
         ## Questions
-        Github: t | Email: t;
+        Github: sadf | Email: asdf;

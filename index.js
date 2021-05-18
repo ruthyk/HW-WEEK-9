@@ -34,7 +34,7 @@ const promptUser = () => {
     },
     {
       type: 'input',
-      name: 'installation ',
+      name: 'installation',
       message: 'Please give instructions of how to install your application',
     },
     {
@@ -83,6 +83,7 @@ function renderLicenseSection(license) {
   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
   AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
   SOFTWARE.`
+  return licenseSection;
 }
 
 
@@ -122,7 +123,14 @@ function renderLicenseSection(license) {
 //         }
 
 const generateReadme = (answers) => {
+  console.log(answers)
   return `
+      ##Table of Contents
+
+      *[Installation](#installation)
+      
+
+
         # ${answers.title}
           ${renderLicenseBadge(answers.license)}
           
@@ -155,7 +163,7 @@ const generateReadme = (answers) => {
         ${answers.descriptionoflicense}
 
         ## Running Tests
-        ${answers.tests}
+        ${answers.test}
 
         ## Questions
         Github: ${answers.github} | Email: ${answers.email};`
