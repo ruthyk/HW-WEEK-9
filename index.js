@@ -39,6 +39,18 @@ const promptUser = () => {
     },
     {
       type: 'input',
+      name: 'installation',
+      message: 'What command should be run to install dependencies?',
+      default: 'npm i'
+    },
+    {
+      type: 'input',
+      name: 'test',
+      message: 'What command should be run to run tests?',
+      default: 'npm test'
+    },
+    {
+      type: 'input',
       name: 'usage',
       message: 'Please explain how to use your application',
     },
@@ -50,7 +62,7 @@ const promptUser = () => {
     },
     {
         type: 'input',
-        name: 'test',
+        name: 'apptest',
         message: 'Please provide any details about running tests on your application',
     },
   ]);
