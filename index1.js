@@ -40,6 +40,11 @@ const questions = [
     {
     type: 'input',
     name: 'installation',
+    message: 'Please give instructions of how to install your application',
+    },
+    {
+    type: 'input',
+    name: 'installation',
     message: 'What command should be run to install dependencies?',
     default: 'npm i'
     },
@@ -62,7 +67,7 @@ const questions = [
     },
     {
     type: 'input',
-    name: 'test',
+    name: 'applicationtest',
     message: 'Please provide any details about running tests on your application',
     }
 ];
