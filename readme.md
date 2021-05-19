@@ -1,44 +1,47 @@
-# hello
-  ![license](https://img.shields.io/badge/license-MIT-blue.svg)    
-  
-  ## Description
-  hi  
+# I DID IT
+![license](https://img.shields.io/badge/license-Apache-blue.svg)    
 
-  ## Table of Contents
-  * [Installation](#installation)  
-  * [Usage](#usage)  
-  * [Contribution](#contribution)  
-  * [Questions](#questions)
-  
-## Installation
-  hi  
+## Description
+YAY  
 
-## Usage
-  hi
-  
-## Contribution
+## Table of Contents
+* [Installation](#installation)  
+* [Usage](#usage)  
 
-  Contributor Covenant
-
-## License
-  
-  
 * [License](#license)
 
-  MIT
-      
-      Copyright (c)
-      
-      Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following 
-      
-      The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-      
-      THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-      AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-      SOFTWARE.  
+* [Contribution](#contribution)  
+* [Questions](#questions)
+
+## Installation
+YAY  
+
+## Usage
+YAY
+
+## Contribution
+
+
+      The following behaviors are expected and requested of all community members:
+      Participate in an authentic and active way. In doing so, you contribute to the health and longevity of this community.
+      Exercise consideration and respect in your speech and actions.
+      Attempt collaboration before conflict.
+      Refrain from demeaning, discriminatory, or harassing behavior and speech.
+      Be mindful of your surroundings and of your fellow participants. Alert community leaders if you notice a dangerous situation, someone in distress, or violations of this Code of Conduct, even if they seem inconsequential.
+      Remember that community event venues may be shared with members of the public; please be respectful to all patrons of these locations.
+
+## License
+
+
+      Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.
+      You may obtain a copy of the License at     
+                  http://www.apache.org/licenses/LICENSE-2.0
+              
+      Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+      See the License for the specific language governing permissions and limitations under the License.  
 
 ## Running Tests     
-  
+YAY
 
 ## Questions
-  Github: hi | Email: hi;
+Github: YAY | Email: YAY
