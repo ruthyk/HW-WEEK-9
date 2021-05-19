@@ -11,10 +11,10 @@ const questions = [
     name: 'title',
     message: 'What is the title of your project?',
     },
-    {
-        type: 'input',
-        name: 'description',
-        message: 'Please write a short description of your project'
+    { 
+    type: 'input',
+    name: 'description',
+    message: 'Please write a short description of your project'
     },
     {
     type: 'input',
@@ -75,8 +75,8 @@ function writeToFile(fileName, data) {
 // Function to initialize app
 function init() {
  inquirer.prompt(questions).then(inquirerResponses => {
-  console.log('Generating README...');
-  writeToFile('README.md', generateMarkdown({ ...inquirerResponses }));
+  console.log('Generating README');
+  writeToFile('README.md', generateMarkdown({ inquirerResponses }));
  });
 }
 
@@ -88,7 +88,7 @@ function renderLicenseBadge(license) {
     return '';
    }
    
-   // Create a function that returns the license link
+   // Return license link
    // If there is no license, return an empty string
    function renderLicenseLink(license) {
     if (license !== 'None') {
@@ -97,7 +97,7 @@ function renderLicenseBadge(license) {
     return '';
    }
    
-   // Create a function that returns the license section of README
+   // Returns license section
    // If there is no license, return an empty string
    function renderLicenseSection(license) {
     if (license !== 'None') {
@@ -107,7 +107,7 @@ function renderLicenseBadge(license) {
     return '';
    }
    
-   // Create a function to generate markdown for README
+   // Generate markdown for README
    function generateMarkdown(data) {
     return `# ${data.title}
    ${renderLicenseBadge(data.license)}
@@ -117,31 +117,25 @@ function renderLicenseBadge(license) {
    * [Installation](#installation)
    * [Usage](#usage)
    ${renderLicenseLink(data.license)}
-   * [Contributing](#contributing)
+   * [Contribution](#contribution)
    * [Tests](#tests)
    * [Questions](#questions)
    ## Installation
-   To install necessary dependencies, run the following command:
-   \`\`\`
+   
    ${data.installation}
-   \`\`\`
+   
    ## Usage
    ${data.usage}
    ${renderLicenseSection(data.license)}
     
-   ## Contributing
-   ${data.contributing}
+   ## Contribution
+   ${data.contribution}
    ## Tests
-   To run tests, run the following command:
-   \`\`\`
+      
    ${data.test}
-   \`\`\`
+   
    ## Questions
-   If you have any questions about the repo, open an issue or contact me directly at ${
-     data.email
-    }. You can find more of my work at [${data.github}](https://github.com/${
-     data.github
-    }/).
+   For any questions, please contact: ${data.email}. Check out my work at [${data.github}](https://github.com/${data.github}/).
    `;
    }
    
